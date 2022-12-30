@@ -29,7 +29,7 @@ struct CopilotView: View {
                                 .alert(isPresented: $isUserCodeCopiedAlertPresented) {
                                     Alert(
                                         title: Text(userCode ?? ""),
-                                        message: Text("The user code is pasted into your clipboard, please paste it in the opened website to login.\nAfter that, click \"Confirm Sign-in\" to finish."),
+                                        message: Text("The user code has been copied into your clipboard, please paste it in the opened website to login.\nAfter that, click \"Confirm Sign-in\" to finish."),
                                         dismissButton: .default(Text("OK"))
                                     )
                                 }
